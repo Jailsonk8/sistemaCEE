@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Login</title>
+        <title>{{$title or "Sistema CEE"}}Login</title>
         <link href="{{url('bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" >
         <style>
            body{

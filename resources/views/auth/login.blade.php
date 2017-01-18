@@ -10,17 +10,20 @@
                 </div>
                 <div class="panel-body">
                     
-                    {!! Form::open(['route' => 'login', 'class' => 'form']) !!}
+                    {!! Form::open(['route' => 'login', 'class' => 'form']) !!} 
                         
                         <fieldset>
                             <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                                 {!! Form::text('email', null, ['id'=> 'email', 'class' => 'form-control', 'placeholder' => 'E-mail']) !!}
+                               
                                 @if ($errors->has('email'))
                                 <span class="help-block">
                                     <strong>{{ $errors->first('email') }}</strong>
                                 </span>
                                 @endif
+                                
                             </div>
+                            
                             <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                                 
                                  {!! Form::password('password', ['id'=> 'password', 'class' => 'form-control', 'placeholder' => 'Senha']) !!}

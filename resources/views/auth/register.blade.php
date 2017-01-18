@@ -9,45 +9,51 @@
                     <h3 class="panel-title">Cadastre-se</h3>
                 </div>
                 <div class="panel-body">
-                    <form accept-charset="UTF-8" role="form" method="POST" action="{{ url('/register') }}">
-                        {{ csrf_field() }}
+                     {!! Form::open(['route' => 'register', 'class' => 'form']) !!}
                         <fieldset>
                             <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                                <input id="name" class="form-control" placeholder="Nome" name="name" type="text" value="{{ old('name') }}" required autofocus>
-                                @if ($errors->has('nome'))
+                                {!! Form::text('name', null, ['id'=> 'nome', 'class' => 'form-control', 'placeholder' => 'Nome']) !!}
+                                
+                                @if ($errors->has('name'))
                                 <span class="help-block">
-                                    <strong>{{ $errors->first('email') }}</strong>
+                                    <strong>{{ $errors->first('name') }}</strong>
                                 </span>
                                 @endif
+                                
                             </div>
 
                             <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                                <input id="email" class="form-control" placeholder="E-mail" name="email" type="text" value="{{ old('email') }}" required autofocus>
+                                
+                                {!! Form::text('email', null, ['id'=> 'email', 'class' => 'form-control', 'placeholder' => 'E-mail']) !!}
+                                
                                 @if ($errors->has('email'))
                                 <span class="help-block">
                                     <strong>{{ $errors->first('email') }}</strong>
                                 </span>
                                 @endif
+                                
                             </div>
 
                             <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                                <input id="password" class="form-control" placeholder="Senha" name="password" type="password" required>
-
+                               
+                                {!! Form::password('password', ['id'=> 'password', 'class' => 'form-control', 'placeholder' => 'Senha']) !!}
+                               
                                 @if ($errors->has('password'))
                                 <span class="help-block">
                                     <strong>{{ $errors->first('password') }}</strong>
                                 </span>
                                 @endif
+                                
                             </div>
                             
                             <div class="form-group">
-                                    <input id="password-confirm" type="password"  placeholder="Confirmar Senha" class="form-control" name="password_confirmation" required>
+                                    {!! Form::password('password_confirmation', ['class' => 'form-control', 'placeholder' => 'Confirmar Senha']) !!}
                             </div>
 
-                            <input class="btn btn-lg btn-success btn-block" type="submit" value="Cadastrar">
                             
+                            {!! Form::submit('Cadastrar', ['class' => 'btn btn-lg btn-success btn-block']) !!}
                         </fieldset>
-                    </form>
+                     {!! Form::close() !!}
                 </div>
             </div>
         </div>
