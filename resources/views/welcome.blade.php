@@ -79,6 +79,8 @@
                 </div>
 
                 <p> Olá mundo! (by Jorge)</p>
+				
+				<p> Hello World! (by Prof. Clodoaldo</p>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
