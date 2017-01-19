@@ -78,6 +78,8 @@
                     Laravel
                 </div>
 
+                <p> Olá mundo! (by Jorge)</p>
+
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
