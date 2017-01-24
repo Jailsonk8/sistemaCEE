@@ -12,3 +12,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/home/discente', 'Painel\Discente\DiscenteController@index');
+Route::get('/home/discente/cadastro', 'Painel\Discente\DiscenteController@create');

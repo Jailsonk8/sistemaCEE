@@ -33,6 +33,16 @@
                                 @endif
                                 
                             </div>
+                            
+                            <div class="form-group{{ $errors->has('acesso') ? ' has-error' : '' }}">
+                                {!! Form::select('acesso', ['D' => 'Dicente', 'E' => 'Empresa'], null, ['id' => 'acesso', 'class' => 'form-control', 'placeholder' => 'Selecione seu acesso']) !!}
+                                
+                                 @if ($errors->has('acesso'))
+                                <span class="help-block">
+                                    <strong>{{ $errors->first('acesso') }}</strong>
+                                </span>
+                                @endif
+                            </div>
 
                             <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                                
