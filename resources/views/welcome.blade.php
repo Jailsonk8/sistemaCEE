@@ -75,7 +75,23 @@
 
             <div class="content">
                 <div class="title m-b-md">
+<<<<<<< HEAD
                     Sistema C.E.E
+=======
+                    Laravel
+                </div>
+
+                <p> Olá mundo! (by Jorge)</p>
+				
+				<p> Hello World! (by Prof. Clodoaldo</p>
+
+                <div class="links">
+                    <a href="https://laravel.com/docs">Documentation</a>
+                    <a href="https://laracasts.com">Laracasts</a>
+                    <a href="https://laravel-news.com">News</a>
+                    <a href="https://forge.laravel.com">Forge</a>
+                    <a href="https://github.com/laravel/laravel">GitHub</a>
+>>>>>>> e43afded8b828013f7d460ed804d84e9cb49a2e1
                 </div>
             </div>
         </div>
