@@ -14,6 +14,7 @@ class DiscenteController extends Controller
      */
     public function index()
     {
+        
         return view('painel.discentes.home.index');
     }
 
@@ -24,7 +25,8 @@ class DiscenteController extends Controller
      */
     public function create()
     {
-        return view('painel.discentes.home.create_edite');
+        $title = "Casdastro Discente";
+        return view('painel.discentes.home.create_edite', compact('title'));
     }
 
     /**
@@ -57,7 +59,7 @@ class DiscenteController extends Controller
      */
     public function edit($id)
     {
-        //
+        
     }
 
     /**
