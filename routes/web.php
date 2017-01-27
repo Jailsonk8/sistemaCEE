@@ -1,6 +1,7 @@
 <?php
 
 Route::resource('/home/discentes', 'Painel\Discente\DiscenteController' );
+Route::resource('/home/empresas', 'Painel\Empresa\EmpresaController' );
 
 Route::get('painel/admin', function(){
     return view('painel.admin.index');

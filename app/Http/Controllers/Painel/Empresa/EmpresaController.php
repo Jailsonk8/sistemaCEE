@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Painel\Discente;
+namespace App\Http\Controllers\Painel\Empresa;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class DiscenteController extends Controller
+class EmpresaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +14,7 @@ class DiscenteController extends Controller
      */
     public function index()
     {
-        
-       // return view('painel.discentes.home.index');
-        return redirect()->route('discentes.create');
+        return redirect()->route('empresa.crate');
     }
 
     /**
@@ -25,9 +23,9 @@ class DiscenteController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
-        $title = "Casdastro Discente";
-        return view('painel.discentes.create_edite', compact('title'));
+    {   
+        $title = 'Cadastro da Empresa';
+        return view('painel.empresas.create_edit', compact('title'));
     }
 
     /**
@@ -38,7 +36,7 @@ class DiscenteController extends Controller
      */
     public function store(Request $request)
     {
-        return view('painel.discentes.index');
+        //
     }
 
     /**
@@ -60,7 +58,7 @@ class DiscenteController extends Controller
      */
     public function edit($id)
     {
-        
+        //
     }
 
     /**
