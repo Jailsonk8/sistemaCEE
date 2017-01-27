@@ -6,7 +6,7 @@
 <div class="col-md-6 col-md-offset-3">
     <h1>{{$title or "Dados"}}</h1>
     <hr>
-    {!! Form::open(['url' => '/home/discente/cadastro']) !!}
+    {!! Form::open(['route' => 'discentes.store']) !!}
     
         <div class="form-group">
             {!! Form::text('nome', null, ['class' => 'form-control', 'placeholder' => 'Nome Completo']) !!}
@@ -18,7 +18,7 @@
             {!! Form::text('matricula', null, ['class' => 'form-control', 'placeholder' => 'Matricula']) !!}
         </div>
         <div class="form-group">
-            {!! Form::select('curso', ['1' => 'Discente', '2' => 'Empresa'], null, ['class' => 'form-control','placeholder' => 'Selecione seu curso..']) !!}
+            {!! Form::select('curso', ['1' => 'Informatica', '2' => 'Eletrotecnica', '3' => 'Edificação'], null, ['class' => 'form-control','placeholder' => 'Selecione seu curso..']) !!}
         </div>
         <div class="form-group">
             {!! Form::text('cpf', null, ['class' => 'form-control', 'placeholder' => 'CPF']) !!}

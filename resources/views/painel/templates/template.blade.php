@@ -4,10 +4,7 @@
         <title>{{$title or 'Adminstrador'}}</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="{{url('bootstrap/css/bootstrap.min.css')}}">   
-        <link href="{{url('sources/painel/css/style-admin.css')}}" rel="stylesheet">
-        
-        
-        
+        <link href="{{url('sources/painel/css/style-admin.css')}}" rel="stylesheet">  
         
     </head> 
     <body>

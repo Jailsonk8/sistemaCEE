@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>Testando Home Discente</h1>
+<h1>testendo index discente</h1>
 @endsection
 
 

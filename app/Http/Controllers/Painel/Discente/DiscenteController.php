@@ -15,7 +15,8 @@ class DiscenteController extends Controller
     public function index()
     {
         
-        return view('painel.discentes.home.index');
+       // return view('painel.discentes.home.index');
+        return redirect()->route('discentes.create');
     }
 
     /**
@@ -37,7 +38,7 @@ class DiscenteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return view('painel.discentes.home.index');
     }
 
     /**
