@@ -8,7 +8,7 @@ Route::get('painel/admin', function(){
 
 Route::get('/', function () {
     //return view('site.home.index');
-    return view('welcome');
+    return view('home');
 });
 
 Auth::routes();
