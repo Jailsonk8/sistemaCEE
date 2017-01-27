@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('painel.discentes.templates.template')
 
 @section('content')
-<h1>testendo index discente</h1>
+    <h1>testendo index discente</h1>
 @endsection
 
 

@@ -37,7 +37,6 @@
     @yield('contato')
     @yield('social')
     @yield('rodape')
-
     <!--  Scripts  -->
     <script src="/js/app.js"></script> 
 </body>
