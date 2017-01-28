@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('nav')
+@section('conteudo')
      <!-- NAV SECTION -->
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
@@ -54,9 +54,7 @@
         </div>
     </div>
      <!--END NAV SECTION -->
-@endsection
 
-@section('home')
 <!--HOME SECTION-->
     <div id="home-sec">
 
@@ -73,9 +71,7 @@
     </div>
          </div>
     <!--END HOME SECTION-->
-@endsection
 
-@section('services')
 <!--SERVICES SECTION-->    
     <section  id="services-sec">
         <div class="container">
@@ -168,10 +164,7 @@
         </div>
     </section>
     <!--END SERVICES SECTION-->
-@endsection
 
-
-@section('status')
  <!--STATS SECTION-->
     <section class="c-blue">
         <div class="container">
@@ -197,10 +190,10 @@
         </div>
     </section>
     <!--END STATS SECTION-->
-@endsection
 
 
-@section('contato')
+
+
 <!--CONTACT SECTION-->
     
     <section  id="contact-sec">
@@ -267,9 +260,8 @@
         </div>
     </section>
     <!--END CONTACT SECTION-->
-@endsection
 
-@section('social')
+
  <!-- SOCIAL STATS SECTION-->
     <section>
         <div class="container">
@@ -277,9 +269,9 @@
         </div>
     </section>
     <!-- END SOCIAL STATS SECTION-->
-@endsection
 
-@section('rodape')
+
+
 <!--FOOTER SECTION -->
     <div id="footer">
         2014 www.yourdomain.com | All Right Reserved | Terms | Policies | Licenses 

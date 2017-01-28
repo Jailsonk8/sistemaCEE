@@ -30,13 +30,8 @@
     </script>
 </head>
 <body>
-    @yield('nav')
-    @yield('home')
-    @yield('services')
-    @yield('status')
-    @yield('contato')
-    @yield('social')
-    @yield('rodape')
+    @yield('conteudo')
+   
     <!--  Scripts  -->
     <script src="/js/app.js"></script> 
 </body>
