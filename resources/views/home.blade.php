@@ -17,9 +17,9 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#home-sec">HOME</a></li>
-                    <li><a href="#services-sec">SERVICES</a></li>
-                    <li><a href="#contact-sec">CONTACT</a></li>
+                    <li><a href="#home-sec">INICIO</a></li>
+                    <li><a href="#services-sec">SERVIÇOS</a></li>
+                    <li><a href="#contact-sec">CONTATO</a></li>
 
                      <!-- mudei o login Pra ka!!!! -->
                                  @if (Auth::guest())
