@@ -14,12 +14,10 @@
     <!-- <link href="/css/app.css" rel="stylesheet">  -->
 
     <link rel="stylesheet" type="text/css" href="{{url('bootstrap/css/bootstrap.css')}}">
-
-    <link rel="stylesheet"  href="{{url('sources/site/css/bootstrap.css')}}">
     
-    <link rel="stylesheet" href="{{url('sources/site/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{url('sources/site/fonts/font-awesome.min.css')}}">
 
-    <link rel="stylesheet" href="{{url('sources/site/css/font-awesome-animation.css')}}">
+    <link rel="stylesheet" href="{{url('sources/site/fonts/font-awesome-animation.css')}}">
 
      <link  rel="stylesheet" href="{{url('sources/site/css/style.css')}}">
     <!-- Scripts -->
@@ -34,5 +32,14 @@
    
     <!--  Scripts  -->
     <script src="/js/app.js"></script> 
+
+      <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  -->
+    <script src="{{url('sources/site/plugins/jquery-1.10.2.js')}}"></script>
+    <!-- BOOTSTRAP CORE SCRIPT   -->
+    <script src="{{url('sources/site/plugins/bootstrap.js')}}"></script>
+  
+    <!-- CUSTOM SCRIPTS -->
+    <script src="{{url('sources/site/js/custom.js')}}"></script>
 </body>
 </html>

@@ -1,11 +1,7 @@
 @extends('painel.discentes.templates.template')
 
 @section('content')
-<div class="container">
-<div class="row">
-<div class="col-md-6 col-md-offset-3">
-    <h1>{{$title or "Dados"}} {{$data->name  or "not fald"}}</h1>
-    <hr>
+
     {!! Form::open(['route' => 'discentes.store']) !!}
     
         <div class="form-group">
@@ -54,7 +50,4 @@
         </div>
     {!! Form::submit('Cadastrar', ['class' => 'btn btn-lg btn-success btn-block']) !!}<br><br>
     {!! Form::close() !!}
-         </div>
-    </div>
-    </div>
 @endsection

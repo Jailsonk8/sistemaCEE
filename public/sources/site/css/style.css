@@ -132,7 +132,7 @@ border-radius: 0px;
 
 .navbar-inverse {
 	background: #000000;
-
+    
 }
 
 .navbar-inverse .navbar-nav > .active > a {
@@ -240,15 +240,6 @@ font-size: 45px;
 /*=======================================
     FOOTER STYLES
 ==================================================*/
-
-
-#footer {
-    background-color:#000;
-    color:#fff;
-    padding:20px 50px 20px 50px;
-    text-align:right;
-}
-
 
 
 
