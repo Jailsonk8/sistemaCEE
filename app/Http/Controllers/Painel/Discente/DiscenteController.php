@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Painel\Discente;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Discente;
+use App\User;
 
 class DiscenteController extends Controller
 {
@@ -12,11 +14,18 @@ class DiscenteController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    
+    private $discente;
+    
+    public function __construct(Discente $discente) {
+        $this->discente = $discente;
+    }
+
     public function index()
-    {
-        
-       // return view('painel.discentes.home.index');
-        return redirect()->route('discentes.create');
+    {    
+       
+       return view('painel.discentes.index');
+       //return redirect()->route('discentes.create',  compact('data'));
     }
 
     /**
@@ -24,10 +33,19 @@ class DiscenteController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(User $user)
     {
         $title = "Casdastro Discente";
-        return view('painel.discentes.create_edite', compact('title'));
+        
+        return view('painel.discentes.create_edite', compact('title', 'data'));
+//        if($this->discente->all()->user_id == $user->id)
+//        {
+//            return redirect()->route('discentes.index');
+//        }
+//        else
+//        {
+//            return view('painel.discentes.create_edite', compact('title', 'data'));
+//        }
     }
 
     /**
