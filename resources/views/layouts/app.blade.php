@@ -14,8 +14,6 @@
     <!-- <link href="/css/app.css" rel="stylesheet">  -->
 
     <link rel="stylesheet" type="text/css" href="{{url('bootstrap/css/bootstrap.css')}}">
-
-    <link rel="stylesheet"  href="{{url('sources/site/css/bootstrap.css')}}">
     
     <link rel="stylesheet" href="{{url('sources/site/css/font-awesome.min.css')}}">
 
