@@ -30,16 +30,17 @@
 <body>
     @yield('conteudo')
    
-    <!--  Scripts  -->
-    <script src="/js/app.js"></script> 
-
-      <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
-    <!-- CORE JQUERY  -->
-    <script src="{{url('sources/site/plugins/jquery-1.10.2.js')}}"></script>
-    <!-- BOOTSTRAP CORE SCRIPT   -->
-    <script src="{{url('sources/site/plugins/bootstrap.js')}}"></script>
-  
-    <!-- CUSTOM SCRIPTS -->
-    <script src="{{url('sources/site/js/custom.js')}}"></script>
+   
 </body>
+     <!--  Scripts  -->
+        <script src="/js/app.js"></script> 
+
+          <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+        <!-- CORE JQUERY  -->
+        <script src="{{url('sources/site/plugins/jquery-1.10.2.js')}}"></script>
+        <!-- BOOTSTRAP CORE SCRIPT   -->
+        <script src="{{url('sources/site/plugins/bootstrap.js')}}"></script>
+      
+        <!-- CUSTOM SCRIPTS -->
+        <script src="{{url('sources/site/js/custom.js')}}"></script>
 </html>

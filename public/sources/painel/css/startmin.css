@@ -657,10 +657,3 @@ table.dataTable thead .sorting:after {
     color: #fff; /* active text color */
     background-color: #a94442; /* active bg color */
 }
-
-#footer {
-    background-color:#000;
-    color:#fff;
-    padding:20px 50px 20px 50px;
-    text-align:right;
-}
