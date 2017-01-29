@@ -23,7 +23,7 @@
 
                      <!-- mudei o login Pra ka!!!! -->
                                  @if (Auth::guest())
-                                        <li><a href="{{ url('/login') }}">LOGIN</a></li>
+                                        <li><a href="{{url('/login')}}">LOGIN</a></li>
                                         <li><a href="{{ url('/register') }}">REGISTRE-SE</a></li>
                                     @else
                                         <li class="dropdown">
