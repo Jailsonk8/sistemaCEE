@@ -1,28 +1,29 @@
 <?php
 
-namespace App\Http\Controllers\Painel\Empresa;
+namespace App\Http\Controllers\Painel\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\Empresa;
+use App\Models\Admin;
 
-class EmpresaController extends Controller
+class AdminController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    private $empresa;
     
-    public function __construct(Empresa $empresa) {
+    private $admin;
+    
+    public function __construct(Admin $admin) {
         $this->middleware('auth');
-        $this->empresa = $empresa;
+        $this->admin = $admin;
     }
     
     public function index()
     {
-        return view('painel.empresas.index');
+        return view('painel.admin.index');
     }
 
     /**
@@ -31,9 +32,8 @@ class EmpresaController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {   
-        $title = 'Cadastro da Empresa';
-        return view('painel.empresas.create_edit', compact('title'));
+    {
+        //
     }
 
     /**

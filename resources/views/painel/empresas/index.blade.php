@@ -1,5 +1,5 @@
 @extends('painel.templates.template')
 
 @section('content')
- <h1>Testando area do Administrador</h1>
+    <h1>testendo index da Empresas</h1>
 @endsection

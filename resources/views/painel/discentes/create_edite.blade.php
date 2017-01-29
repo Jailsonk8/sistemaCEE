@@ -1,4 +1,4 @@
-@extends('painel.discentes.templates.template')
+@extends('painel.templates.template')
 
 @section('content')
 

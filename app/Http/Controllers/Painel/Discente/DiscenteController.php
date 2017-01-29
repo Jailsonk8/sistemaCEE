@@ -18,14 +18,28 @@ class DiscenteController extends Controller
     private $discente;
     
     public function __construct(Discente $discente) {
+        $this->middleware('auth');
         $this->discente = $discente;
     }
 
     public function index()
     {    
-       
-       return view('painel.discentes.index');
-       //return redirect()->route('discentes.create',  compact('data'));
+      $idUser = auth()->user()->id;
+     //$discs = $this->discente->where('user_id', $idUser)->get();
+     
+//      $discs = $this->discente
+//                ->where('user_id','=', $idUser);
+//     
+//     dd(isset($discs));
+     
+      
+      
+      //dd(isset($idUserDisc));
+//      if($idUser == $idUserDisc){
+          return view('painel.discentes.index');
+//      }
+//      
+//       return redirect()->route('discentes.create');
     }
 
     /**
@@ -33,7 +47,7 @@ class DiscenteController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(User $user)
+    public function create()
     {
         $title = "Casdastro Discente";
         
