@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>{{$title or 'Cadastro-Edite'}}</title>
+        <title>{{$title or 'Home Page Discente'}}</title>
         <meta charset="utf-8">
 
         <link rel="stylesheet" href="{{url('bootstrap/css/bootstrap.min.css')}}">   
