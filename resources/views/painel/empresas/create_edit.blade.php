@@ -1,4 +1,4 @@
-@extends('painel.templates.template')
+@extends('painel.empresa.templates.template')
 
 @section('content')
 <div class="container">
