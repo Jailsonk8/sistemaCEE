@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Painel\Empresa;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Empresa;
+use App\Http\Requests\Painel\EmpresaFormRequest;
 
 class EmpresaController extends Controller
 {
@@ -42,9 +43,17 @@ class EmpresaController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(EmpresaFormRequest $request)
     {
-        //
+         $dataForm = $request->all();
+         $dataForm['user_id_empresa'] = auth()->user()->id;
+         
+         $insert = $this->empresa->create($dataForm);
+         
+          if ($insert)
+             return redirect()->route('empresas.index');
+          else
+            return redirect()->route('empresas.create');
     }
 
     /**
