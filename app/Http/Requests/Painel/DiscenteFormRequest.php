@@ -13,7 +13,7 @@ class DiscenteFormRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,40 @@ class DiscenteFormRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'nome'              => 'requered',
+            'email'             => 'requered|email|max:225',
+            'matricula'         => 'requered|min:3|max:20',
+            'cpf'               => 'requered|min:3|max:11',
+            'ctps'              => 'requered|min:3|max:11',
+            'rg_expeditor'      => 'requered|min:3|max:30',
+            'curso'             => 'requered|min:3|max:80',
+            'nascimento'        => 'requered',
+            'endereco'          => 'requered|min:3|max:100',
+            'bairro'            => 'requered|min:3|max:100',
+            'estado'            => 'requered|min:3|max:50',
+            'cidade'            => 'requered|min:3|max:50',
+            'cep'               => 'requered|min:3|max:8',
+            'fone'              => 'requered|min:3|max:11',
+        ];
+    }
+    
+    public function mansagens()
+    {
+        return [
+            'nome'              => '',
+            'email'             => '',
+            'matricula'         => '',
+            'cpf'               => '',
+            'ctps'              => '',
+            'rg_expeditor'      => '',
+            'curso'             => '',
+            'nascimento'        => '',
+            'endereco'          => '',
+            'bairro'            => '',
+            'estado'            => '',
+            'cidade'            => '',
+            'cep'               => '',
+            'fone'              => '',
         ];
     }
 }

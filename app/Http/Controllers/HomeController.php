@@ -27,10 +27,10 @@ class HomeController extends Controller
         $acesso = auth()->user()->acesso;
         
         if($acesso == "D"){
-           return redirect()->route('discentes.index'); 
+           return redirect()->route('discentes.create'); 
         }
         if($acesso == "E"){
-           return redirect()->route('empresas.index'); 
+           return redirect()->route('empresas.create'); 
         }
         if($acesso == "A"){
            return redirect()->route('admin.index'); 

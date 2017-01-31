@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Empresa;
 use App\Http\Requests\Painel\EmpresaFormRequest;
+use DB;
 
 class EmpresaController extends Controller
 {
@@ -23,7 +24,8 @@ class EmpresaController extends Controller
     
     public function index()
     {
-        return view('painel.empresas.index');
+        $title = "SistemaCEE - Empresa";
+        return view('painel.empresas.index', compact('title'));
     }
 
     /**
@@ -32,9 +34,20 @@ class EmpresaController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {   
-        $title = 'Cadastro da Empresa';
-        return view('painel.empresas.create_edit', compact('title'));
+    {      
+        $idUser = auth()->user()->id;
+        $users = DB::select('select * from empresas where user_id_empresa = ?', [$idUser]);
+        $dado = false;
+        
+        foreach ($users as $user){
+            if($user->user_id_empresa == $idUser)
+             $dado = true;
+        }
+        if($dado){
+           return redirect ()->route ('empresas.index');  
+        }else{
+           return view('painel.empresas.create_edit', compact('title'));
+        }
     }
 
     /**

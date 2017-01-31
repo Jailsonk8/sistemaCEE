@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Discente;
 use App\User;
+use App\Http\Requests\Painel\DiscenteFormResquest;
 
 class DiscenteController extends Controller
 {
@@ -24,22 +25,9 @@ class DiscenteController extends Controller
 
     public function index()
     {    
-      $idUser = auth()->user()->id;
-     //$discs = $this->discente->where('user_id', $idUser)->get();
-     
-//      $discs = $this->discente
-//                ->where('user_id','=', $idUser);
-//     
-//     dd(isset($discs));
-     
-      
-      
-      //dd(isset($idUserDisc));
-//      if($idUser == $idUserDisc){
-          return view('painel.discentes.index');
-//      }
-//      
-//       return redirect()->route('discentes.create');
+
+      return view('painel.discentes.index');
+
     }
 
     /**
@@ -52,14 +40,7 @@ class DiscenteController extends Controller
         $title = "Casdastro Discente";
         
         return view('painel.discentes.create_edite', compact('title', 'data'));
-//        if($this->discente->all()->user_id == $user->id)
-//        {
-//            return redirect()->route('discentes.index');
-//        }
-//        else
-//        {
-//            return view('painel.discentes.create_edite', compact('title', 'data'));
-//        }
+
     }
 
     /**
@@ -70,7 +51,16 @@ class DiscenteController extends Controller
      */
     public function store(Request $request)
     {
-        return view('painel.discentes.index');
+         $dataForm = $request->all();
+         $dataForm['user_id'] = auth()->user()->id;
+         
+         
+         $insert = $this->empresa->create($dataForm);
+         
+         if ($insert)
+             return redirect()->route('discentes.index');
+         else
+            return redirect()->route('discentes.create');
     }
 
     /**
