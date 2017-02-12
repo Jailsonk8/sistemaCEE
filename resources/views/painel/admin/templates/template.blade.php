@@ -114,6 +114,17 @@
                                 <!-- link para o historico de estagios -->
                                 <a href="#" class="active"><i class="glyphicon glyphicon-eye-open"></i> Curriculo</a>
                             </li>
+                            <li>
+                                <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
+                                <ul id="demo" class="collapse">
+                                    <li>
+                                        <a href="#">Dropdown Item</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Dropdown Item</a>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
 
                     </div>

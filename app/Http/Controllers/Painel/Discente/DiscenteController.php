@@ -55,7 +55,7 @@ class DiscenteController extends Controller
          $dataForm['user_id'] = auth()->user()->id;
          
          
-         $insert = $this->empresa->create($dataForm);
+         $insert = $this->discente->create($dataForm);
          
          if ($insert)
              return redirect()->route('discentes.index');
