@@ -55,9 +55,17 @@ class DiscenteController extends Controller
          
          $insert = $this->discente->create($dataForm);
          
+<<<<<<< HEAD
           if ($insert)
              return redirect()->route('curriculos.create');
           else
+=======
+         $insert = $this->discente->create($dataForm);
+         
+         if ($insert)
+             return redirect()->route('discentes.index');
+         else
+>>>>>>> origin/master
             return redirect()->route('discentes.create');
     }
 
