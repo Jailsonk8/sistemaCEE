@@ -3,6 +3,7 @@
 Route::resource('/home/discentes', 'Painel\Discente\DiscenteController' );
 Route::resource('/home/empresas', 'Painel\Empresa\EmpresaController' );
 Route::resource('/home/admin', 'Painel\Admin\AdminController' );
+Route::resource('home/curriculos', 'Painel\Curriculo\CurriculoController');
 
 
 Route::get('/', function () {
@@ -11,6 +12,9 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+
+//Route::get('/upload', 'Painel\Curriculo\CurriculoController@upload');
+//Route::post('/curriculo/cadastro', 'Painel\Curriculo\CurriculoController@cadastrarCurriculo');
 
 Route::get('/home', 'HomeController@index');
 

@@ -5,8 +5,8 @@ namespace App\Http\Controllers\Painel\Discente;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Discente;
-use App\User;
-use App\Http\Requests\Painel\DiscenteFormResquest;
+use App\Http\Requests\Painel\DiscenteFormRequest;
+use DB;
 
 class DiscenteController extends Controller
 {
@@ -25,8 +25,8 @@ class DiscenteController extends Controller
 
     public function index()
     {    
-
-      return view('painel.discentes.index');
+        $title = "Cadastros de Disente";
+        return view('painel.discentes.index', compact('title'));
 
     }
 
@@ -37,10 +37,9 @@ class DiscenteController extends Controller
      */
     public function create()
     {
-        $title = "Casdastro Discente";
+        $title = "Cadastro Discente";
+        return view('painel.discentes.create_edite', compact('title'));
         
-        return view('painel.discentes.create_edite', compact('title', 'data'));
-
     }
 
     /**
@@ -49,17 +48,16 @@ class DiscenteController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-         $dataForm = $request->all();
+    public function store(DiscenteFormRequest $request)
+    {   
+         $dataForm = $request->except('nome_curriculo');
          $dataForm['user_id'] = auth()->user()->id;
          
+         $insert = $this->discente->create($dataForm);
          
-         $insert = $this->empresa->create($dataForm);
-         
-         if ($insert)
-             return redirect()->route('discentes.index');
-         else
+          if ($insert)
+             return redirect()->route('curriculos.create');
+          else
             return redirect()->route('discentes.create');
     }
 
@@ -105,6 +103,12 @@ class DiscenteController extends Controller
      */
     public function destroy($id)
     {
-        //
+        
     }
+    
+    public function storeCurriculo(DiscenteFormRequest $request)
+    {
+        
+    }
+    
 }

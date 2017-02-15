@@ -15,6 +15,8 @@ class CreateCurriculosTable extends Migration
     {
         Schema::create('curriculos', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('discente_id')->unsigned();
+            $table->foreign('discente_id')->references('id')->on('discentes');
             $table->string('nome_curriculo');
             $table->timestamps();
         });

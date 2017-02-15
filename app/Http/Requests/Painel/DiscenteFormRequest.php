@@ -24,40 +24,40 @@ class DiscenteFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'nome'              => 'requered',
-            'email'             => 'requered|email|max:225',
-            'matricula'         => 'requered|min:3|max:20',
-            'cpf'               => 'requered|min:3|max:11',
-            'ctps'              => 'requered|min:3|max:11',
-            'rg_expeditor'      => 'requered|min:3|max:30',
-            'curso'             => 'requered|min:3|max:80',
-            'nascimento'        => 'requered',
-            'endereco'          => 'requered|min:3|max:100',
-            'bairro'            => 'requered|min:3|max:100',
-            'estado'            => 'requered|min:3|max:50',
-            'cidade'            => 'requered|min:3|max:50',
-            'cep'               => 'requered|min:3|max:8',
-            'fone'              => 'requered|min:3|max:11',
+            'nome'              => 'required',
+            'email'             => 'required|email|max:225',
+            'matricula'         => 'required|min:3|max:20',
+            'cpf'               => 'required|min:3|max:11',
+            'ctps'              => 'required|min:3|max:11',
+            'rg_expeditor'      => 'required|min:3|max:30',
+            'curso'             => 'required',
+            'nascimento'        => 'required',
+            'endereco'          => 'required|min:3|max:100',
+            'bairro'            => 'required|min:3|max:100',
+            'estado'            => 'required|min:3|max:50',
+            'cidade'            => 'required|min:3|max:50',
+            'cep'               => 'required|min:3|max:8',
+            'fone'              => 'required|min:3|max:11',
         ];
     }
     
     public function mansagens()
     {
         return [
-            'nome'              => '',
-            'email'             => '',
-            'matricula'         => '',
-            'cpf'               => '',
-            'ctps'              => '',
-            'rg_expeditor'      => '',
-            'curso'             => '',
-            'nascimento'        => '',
-            'endereco'          => '',
-            'bairro'            => '',
-            'estado'            => '',
-            'cidade'            => '',
-            'cep'               => '',
-            'fone'              => '',
+            'nome.required'              => 'Campo Obrigatório',
+            'email.required'             => 'Campo Obrigatório',
+            'matricula.required'         => 'Campo Obrigatório',
+            'cpf.required'               => 'Campo Obrigatório',
+            'ctps.required'              => 'Campo Obrigatório',
+            'rg_expeditor.required'      => 'Campo Obrigatório',
+            'curso.required'             => 'Campo Obrigatório',
+            'nascimento.required'        => 'Campo Obrigatório',
+            'endereco.required'          => 'Campo Obrigatório',
+            'bairro.required'            => 'Campo Obrigatório',
+            'estado.required'            => 'Campo Obrigatório',
+            'cidade.required'            => 'Campo Obrigatório',
+            'cep.required'               => 'Campo Obrigatório',
+            'fone.required'              => 'Campo Obrigatório',
         ];
     }
 }

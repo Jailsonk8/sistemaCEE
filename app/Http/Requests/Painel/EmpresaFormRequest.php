@@ -45,15 +45,15 @@ class EmpresaFormRequest extends FormRequest
             'cargo.required'             => 'Campo Obrigatorio',
             'nome_empresa.required'      => 'Campo Obrigatorio',
             'area_atuante.required'      => 'Campo Obrigatorio',
-            'cnpj.required'     => 'Campo Obrigatorio',
-            'cnpj.numeric'      => 'Somente Números',
-            'email.required'       => 'Preencha Corretamente (exemplo@email.com)',
+            'cnpj.required'              => 'Campo Obrigatorio',
+            'cnpj.numeric'               => 'Somente Números',
+            'email.required'             => 'Preencha Corretamente (exemplo@email.com)',
             'endereco.required'          => 'Campo Obrigatorio',
             'bairro.required'            => 'Campo Obrigatorio',
             'estado.required'            => 'Campo Obrigatorio',
             'cidade.required'            => 'Campo Obrigatorio',
-            'cep.numeric'               => 'Somente Números',
-            'fone.numeric'              => 'Somente Números',  
+            'cep.numeric'                => 'Somente Números',
+            'fone.numeric'               => 'Somente Números',  
         ];
     }
 }

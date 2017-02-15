@@ -285,7 +285,7 @@ class ComposerStaticInit974068788c5e3365b8d0995b95141a65
 
     public static $classMap = array (
         'AdminTableSeeder' => __DIR__ . '/../..' . '/database/seeds/AdminTableSeeder.php',
-        'CreateCurriculosTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_27_013012_create_curriculos_table.php',
+        'CreateCurriculosTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_29_013012_create_curriculos_table.php',
         'CreateDiscentesTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_27_013037_create_discentes_table.php',
         'CreateEmpresasTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_27_021745_create_empresas_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',

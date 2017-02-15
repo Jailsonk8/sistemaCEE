@@ -17,8 +17,6 @@ class CreateDiscentesTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->integer('curriculo_id')->unsigned();
-            $table->foreign('curriculo_id')->references('id')->on('curriculos')->onDelete('cascade');
             $table->string('nome');
             $table->string('email')->unique();
             $table->string('matricula')->unique();

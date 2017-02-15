@@ -6,7 +6,21 @@ use Illuminate\Database\Eloquent\Model;
 
 class Discente extends Model
 {
-    public function user(){
-        return $this->belongsTo(User::class);
-    }
+    protected $fillable = [
+        'user_id', 
+        'nome',
+        'email',
+        'matricula',
+        'cpf',
+        'ctps',
+        'rg_expeditor',
+        'curso',
+        'nascimento',
+        'endereco',
+        'bairro',
+        'estado',
+        'cidade',
+        'cep',
+        'fone',
+    ];
 }
