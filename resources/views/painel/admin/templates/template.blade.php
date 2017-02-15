@@ -27,7 +27,7 @@
             <!-- Navigation -->
             <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Sistema CEE</a>
+                    <a class="navbar-brand" href="{{url('sources/painel/imgs/LOGO - PROEIFPI.png')}}"></a>
                 </div>
 
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">

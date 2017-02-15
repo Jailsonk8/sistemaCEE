@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('conteudo')
+@section('conteudo')    
 
      <!-- NAV SECTION -->
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -10,12 +10,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
-                  <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Sistema CEE') }}
-                    </a>
+                </button>                  
+                  
             </div>
+                <!-- Branding Image -->
+          <div class="navbar-brand">
+                   <a href="{{url('/')}}">                        
+                        <img class="img-rounded" style="max-width:90px; margin-top: -14px;" src="{{url('sources/painel/imgs/LOGO - PROEIFPI.png')}}">                    
+                   </a>                 
+          </div>
+
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#home-sec">INICIO</a></li>
@@ -42,7 +46,6 @@
     </div>
      <!--END NAV SECTION -->
 
-
 <!--HOME SECTION-->
 <div id="home-sec">
 
@@ -50,10 +53,10 @@
     <div class="container" id="home" >
         <div class="row text-center">
             <div class="col-md-12">
-                <span class="head-main">GET PAGE DONE</span>
-                <h2 class="head-sub-main">It take efforts</h2>
-                <h3 class="head-last">Lorem ipsum dolor sit ametLorem ipsum dolor sit amet</h3>
-                <a href="#about-sec" class="btn btn-danger btn-lg head-btn-one">DOWNLOAD THIS THEME NOW !</a> 
+                <span class="head-main">PROEIFPI</span>
+                <h2 class="head-sub-main">Sistema do Programa de Estagio do IFPI</h2>
+                <h3 class="head-last">Assista o Tuturial em Video!</h3>
+                <a href="#about-sec" class="btn btn-danger btn-lg head-btn-one">Clique aqui !</a> 
             </div>
         </div>
     </div>
