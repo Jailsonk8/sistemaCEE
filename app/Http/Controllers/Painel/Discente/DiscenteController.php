@@ -54,8 +54,7 @@ class DiscenteController extends Controller
          $dataForm['user_id'] = auth()->user()->id;
          
          $insert = $this->discente->create($dataForm);
-         
-
+        
           if ($insert)
              return redirect()->route('curriculos.create');
           else
