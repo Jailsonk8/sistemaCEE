@@ -64,26 +64,18 @@
 <section  id="services-sec">
     <div class="container">
         <div class="row ">
-            <h1>OUR SERVICES :</h1>
+            <h1>Nossos Serviços</h1>
             <div class="col-md-12 g-pad-bottom">
-                <div class="col-md-6">
-                    <h2>Lorem ipsum dolor sit amet</h2>
+                <div class="col-md-12">
+                    <h2>Serviços Oferecidos pelo Sistema PROEIFPI</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.              
+                       O sistema tem como principal objetivo otimizar o controle dos estágios oferecidos por empresas vinculadas 
+ao Instituto Federal de Ciência e Tecnologia do Piauí - Campus Parnaíba. Nisso, o PROEIFPI atua como principal 
+agente no controle, tanto de empresas vinculadas a instituição, quanto aos alunos que estagiam. Facilitando 
+assim, o contato de estudantes com as empresas e beneficiando ambas as partes.              
                     </p>
                 </div>
-                <div class="col-md-6">
-                    <h2>Lorem ipsum dolor sit amet</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.              
-                    </p>
-                </div>
+                
             </div>
 
             <div class="col-md-12 text-center">
